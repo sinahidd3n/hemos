@@ -1,0 +1,4 @@
+how to merge CSV files:
+
+rm xxx.csv; for fn in $(ls CTC.*.csv); do tail +2 $fn >>A.csv; done
+cat *csv > combined.csv

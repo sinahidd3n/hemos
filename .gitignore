@@ -1,0 +1,26 @@
+# Ignore build, result, and log directories
+log/
+tmp/
+palabos/
+build/
+!build/*/CMakeLists.txt
+!build/*/build.def
+
+doc/doxygen/*/
+doc/user_guide/_build/*
+
+external/parmetis-*/
+tools/packCells/*.pos
+tools/packCells/packCells
+*.log
+
+# Ignore IDE, buildsystem and OS specific cache directories and object files
+.idea/
+*sconsign.dblite
+*.o
+*.DS_Store
+*.plist
+
+# Ignore the default case binary names
+worthy
+
