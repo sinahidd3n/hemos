@@ -979,7 +979,7 @@ void HemoCellParticleField::applyBoundaryRepulsionForce() {
                  
                 const hemo::Array<T, 3> rfm = -1* pow(10,-3) * (P_on*(1-P_off))*dist2  * (dv/distance)/df2 ;
                 
-                //cout<<"rep:"<<endl<<rep[1]<<endl<<rep[2]<<endl<<"rfm"<<rfm[1]<<rfm[2]<<endl;
+                cout<<"rep:"<<endl<<rep[1]<<endl<<rep[2]<<endl<<"rfm"<<rfm[1]<<rfm[2]<<endl;
 
                // if (lParticle.sv.cellId==0 || lParticle.sv.cellId==-1 || lParticle.sv.cellId==1 ||lParticle.sv.cellId==-2 ){  //this should be the cellId of the CTC (or PLT) which can be found in the result folder (.csv file of CTC) [|| lParticle.sv.cellId==1 || lParticle.sv.cellId==2 || lParticle.sv.cellId==3 || lParticle.sv.cellId==-1 || lParticle.sv.cellId==-2 || lParticle.sv.cellId==-3 || lParticle.sv.cellId==-4 || lParticle.sv.cellId==-5 || lParticle.sv.cellId==-6 || lParticle.sv.cellId==-7 || lParticle.sv.cellId==-8]
                	if (distance<3){
